@@ -71,8 +71,6 @@ This repository documents the planning and execution of a private high-performan
 | Platform       | Purpose                 | Link                                 |
 |----------------|-------------------------|--------------------------------------|
 | Vast.ai        | GPU rental marketplace  | (https://vast.ai/console/provider/) |
-https://tensordock.com/provider-application
-https://leaf.cloud/contact/
 ---
 
 ## 📈 Paraguay Plan – LUX Edificio
