@@ -97,19 +97,25 @@ This repository documents the planning and execution of a private high-performan
 > No crypto, no hype — just a hosting experiment focused on long-term capacity growth.
 
 ---
+
+<pre>
 ## 📂 Recommended Folder Structure
+
+```
 /docs
-├── scale-plan.md
-├── gpu-tracker.md
-└── income-log.xlsx
+  ├── scale-plan.md
+  ├── gpu-tracker.md
+  └── income-log.xlsx
 
 /logs
-├── node-zero-setup.md
-└── vast-uptime-log.md
+  ├── node-zero-setup.md
+  └── vast-uptime-log.md
 
 /scripts
-├── gpu-healthcheck.sh
-└── auto-reboot.sh
+  ├── gpu-healthcheck.sh
+  └── auto-reboot.sh
+```
+</pre>
 
 ---
 
