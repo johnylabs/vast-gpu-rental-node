@@ -99,7 +99,7 @@ This repository documents the planning and execution of a private high-performan
 ---
 
 <pre>
-## 📂 Recommended Folder Structure
+### 📂 Recommended Folder Structure
 
 ```
 /docs
