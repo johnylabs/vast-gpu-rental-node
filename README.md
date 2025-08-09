@@ -1,131 +1,99 @@
 # LUX–Edificio–Core 🏢⚙️
-
 **Private Node Optimization Project – Infrastructure Build**
 
-This repository documents the planning and execution of a private high-performance compute node operated within a residential setting. The goal is to develop hands-on operational experience with GPU infrastructure and scale into a profitable, self-funded compute asset using used GPUs and existing hardware.
+This repository documents the **planning and operation** of a private high-performance GPU compute node in a residential rental environment.  
+Goal: Build operational expertise with GPU infrastructure, generate rental income, and scale toward a self-owned compute facility.
 
 ---
 
-## 🎯 Objective
-
-- Operate a single-node GPU workstation from a residential rental with **power included**
-- Generate monthly income through compute-sharing platforms
-- Optimize power usage to stay within typical residential consumption limits
-- Use profits to acquire additional used GPUs and expand capacity gradually
-- Relocate and scale into **Paraguay** long-term with ultra-low energy costs and flexible zoning
-
----
-
-## 🧰 Hardware Strategy (Used GPUs – CAD)
-
-| GPU            | Purchase Price (CAD) | Power Draw (Watts) | Monthly kWh | Monthly Earnings (CAD) | Monthly Profit (CAD) | Months to Break Even |
-|----------------|----------------------|---------------------|-------------|--------------------------|------------------------|------------------------|
-| GTX 1080       | $0 (already owned)   | 180W                | 129.6       | $40                      | $40                    | 0.00                   |
-| RTX 3060 (Used)| $310                 | 200W                | 144.0       | $125                     | $125                   | 2.48                   |
-| RTX 3090 (New) | $1,700               | 350W                | 252.0       | $315                     | $315                   | 5.40                   |
-
-⚠️ *All estimates assume 24/7 uptime, free electricity, and average Vast.ai market rates.*
-
-> Starlink is the only networking device. No router, no ISP charges. Household energy usage is minimized to optimize GPU power availability.
+## 🎯 Objectives
+- Operate a single-node GPU workstation with **free electricity** in a rental environment
+- Generate monthly income via compute-sharing platforms (e.g., Vast.ai)
+- Optimize power usage to stay within residential consumption limits
+- Reinvest profits into additional used GPUs for gradual scaling
+- Long-term relocation and expansion to Paraguay for **ultra-low power costs** and flexible zoning
 
 ---
 
-## 🛠️ Setup Plan (Node Zero – Current Rental)
+## 🧰 Hardware & Profit Estimates (CAD)
 
-### ✅ Build Node Zero
+| GPU               | Price   | Power Draw | Monthly kWh | Earnings | Profit | Break Even |
+|-------------------|---------|------------|-------------|----------|--------|------------|
+| GTX 1080 *(owned)*| $0      | 180W       | 129.6       | $40      | $40    | Immediate  |
+| RTX 3060 *(used)* | $310    | 200W       | 144.0       | $125     | $125   | 2.48 mo    |
+| RTX 3090 *(new)*  | $1,700  | 350W       | 252.0       | $315     | $315   | 5.4 mo     |
 
-- Use GTX 1080 initially to configure and test
-- Install Ubuntu Server LTS or Pop!_OS (NVIDIA optimized)
-- Set up Docker + NVIDIA Container Toolkit
-- Confirm setup using `nvidia-smi`
+> ⚠️ Based on 24/7 uptime, **free electricity**, and average Vast.ai market rates.
 
-### ✅ Join Vast.ai as a Provider
+---
 
-- Set price slightly below average market
-- Enable “Spot Buyer Access” for long-term clients
-- Use `nvidia-smi -pl <watt>` to control card usage
+## 🛠️ Node Zero – Current Setup
+1. Build initial node with **GTX 1080** for configuration & testing
+2. Install **Ubuntu Server LTS** or **Pop!_OS** (NVIDIA optimized)
+3. Configure **Docker + NVIDIA Container Toolkit**
+4. Verify GPU availability with `nvidia-smi`
 
-### ⚡ Power Budget Strategy
+---
 
-- Reduce household appliance use to prioritize GPUs
-- Replace bulbs with LED
+## 🌐 Vast.ai Provider Setup
+- Price slightly below market to ensure consistent rentals
+- Enable **Spot Buyer Access** for long-term clients
+- Use `nvidia-smi -pl <watts>` for power capping
+
+---
+
+## ⚡ Power Budget Strategy
+- Reduce household appliance usage to prioritize GPU power
+- Switch to LED lighting
 - Track usage via `nvidia-smi` and plug-in meters
-
-### 🔁 Reinvest & Expand
-
-- Monitor uptime, usage, and rental income
-- Reinvest into 3060 → 3090 → larger setups
-- Stay within 500–600 kWh/month for consistent performance
+- Target total **500–600 kWh/month** to stay stable
 
 ---
 
-## 📈 Sample Growth Timeline
-
-| Month | Milestone                            |
-|--------|--------------------------------------|
-| 1      | Deploy GTX 1080 and optimize         |
-| 2      | Buy used 3060 with rental income     |
-| 3–4    | Use savings to acquire RTX 3090      |
-| 5–6    | Test total power draw ceiling        |
-| 6–12   | Rotate uptime for multiple GPUs      |
-| 12+    | Begin relocation planning to Paraguay|
-
----
-
-## 🌐 Platforms for Profit
-
-| Platform | Purpose               | Link                                      |
-|----------|------------------------|-------------------------------------------|
-| Vast.ai  | GPU rental marketplace | [vast.ai/console/provider](https://vast.ai/console/provider/) |
+## 📈 Growth Timeline
+| Month | Milestone |
+|-------|-----------|
+| 1     | Deploy GTX 1080 and optimize |
+| 2     | Acquire used 3060 with rental income |
+| 3–4   | Buy RTX 3090 using savings/profits |
+| 5–6   | Test power draw ceiling |
+| 6–12  | Rotate uptime across multiple GPUs |
+| 12+   | Begin Paraguay relocation planning |
 
 ---
 
-## 🇵🇾 Paraguay Plan – LUX Edificio
-
-- $0.01/kWh hydroelectric power
-- Build high-efficiency 5-story compute building
-- Passive water-cooling from natural well
-- Scale to 250+ GPUs over 12–24 months
-- Lease GPU capacity for AI, rendering, and ML training
-
----
-
-## 🧠 Philosophy
-
-> This is **not** a commercial data center.  
-> It’s a personal infrastructure project designed for efficiency, education, and long-term ownership.  
-> No crypto, no hype — just a hosting experiment focused on long-term capacity growth.
+## 🇵🇾 Paraguay Expansion – LUX Edificio
+- Power cost: **$0.01/kWh** hydroelectric
+- 5-story compute building with passive well water cooling
+- Capacity target: **250+ GPUs in 12–24 months**
+- Lease capacity for AI, rendering, ML workloads
+- No crypto mining — focus on stable, long-term hosting
 
 ---
 
-<pre>
-### 📂 Recommended Folder Structure
-
-```
+## 📂 Folder Structure
 /docs
-  ├── scale-plan.md
-  ├── gpu-tracker.md
-  └── income-log.xlsx
+├── scale-plan.md
+├── gpu-tracker.md
+└── income-log.xlsx
 
 /logs
-  ├── node-zero-setup.md
-  └── vast-uptime-log.md
+├── node-zero-setup.md
+└── vast-uptime-log.md
 
 /scripts
-  ├── gpu-healthcheck.sh
-  └── auto-reboot.sh
-```
-</pre>
-
+├── gpu-healthcheck.sh
+└── auto-reboot.sh
 ---
 
 ## ✅ Next Steps
+- [x] Test GTX 1080 on Vast.ai
+- [x] Monitor power draw & income
+- [ ] Add 3060 if profitable
+- [ ] Acquire RTX 3090
+- [ ] Confirm income stability
+- [ ] Begin Paraguay site planning
 
-- ✅ Test GTX 1080 on Vast.ai  
-- ✅ Monitor power draw and rental income  
-- ⬜ Add 3060 if profitable  
-- ⬜ Save for RTX 3090 (new)  
-- ⬜ Test income stability  
-- ⬜ Begin Paraguay site research  
+---
 
-> Power-included. Zero debt. Self-scaling.
+**Power-included. Zero debt. Self-scaling.**  
