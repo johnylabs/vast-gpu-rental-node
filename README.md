@@ -72,6 +72,8 @@ Goal: Build operational expertise with GPU infrastructure, generate rental incom
 ---
 
 ## 📂 Folder Structure
+
+```
 /docs
 ├── scale-plan.md
 ├── gpu-tracker.md
@@ -82,8 +84,10 @@ Goal: Build operational expertise with GPU infrastructure, generate rental incom
 └── vast-uptime-log.md
 
 /scripts
-├── gpu-healthcheck.sh
-└── auto-reboot.sh
+├── **gpu-healthcheck.sh**
+└── **auto-reboot.sh**
+```
+
 ---
 
 ## ✅ Next Steps
