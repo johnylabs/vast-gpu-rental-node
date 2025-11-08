@@ -1,6 +1,6 @@
-# 🖥️ GPU Tracker – LUX–Edificio–Core
+# 🖥️ GPU Tracker – vast-gpu-rental-node
 
-This document tracks all GPUs currently used in the LUX–Edificio–Core project, including their status, usage, ROI, and deployment notes. Updated manually per upgrade cycle.
+This document tracks all GPUs currently used in the vast-gpu-rental-node project, including their status, usage, ROI, and deployment notes. Updated manually per upgrade cycle.
 
 ---
 
@@ -49,11 +49,3 @@ This document tracks all GPUs currently used in the LUX–Edificio–Core projec
 - [ ] Monitor temp/power efficiency curve over time
 - [ ] Explore vertical stacking airflow optimization
 - [ ] Benchmark actual vs estimated power draw (plug meter vs nvidia-smi)
-
----
-
-## 🔐 Metadata
-
-Last updated: **{{ replace this with current date when editing }}**  
-Maintainer: **Johny G**  
-Location Scope: **Canada (Phase 1)** → **Paraguay (Phase 4+)**
