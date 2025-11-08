@@ -1,103 +1,65 @@
 # vast-gpu-rental-node 🏢⚙️
-**Private Node Optimization Project – Infrastructure Build**
+**Concept Archive – Private GPU Rental Node**
 
-This repository documents the **planning and operation** of a private high-performance GPU compute node in a residential rental environment.  
-Goal: Build operational expertise with GPU infrastructure, generate rental income, and scale toward a self-owned compute facility.
+This repo documents a **past experiment and planning exercise** for running a high-performance GPU node in a rental apartment and renting it out via platforms like Vast.ai.
 
----
-
-## 🎯 Objectives
-- Operate a single-node GPU workstation with **free electricity** in a rental environment
-- Generate monthly income via compute-sharing platforms (e.g., Vast.ai)
-- Optimize power usage to stay within residential consumption limits
-- Reinvest profits into additional used GPUs for gradual scaling
-- Long-term relocation and expansion to Paraguay for **ultra-low power costs** and flexible zoning
+It is kept as an **archived concept** for infrastructure + economics learning.  
+I am not actively building or operating this node today.
 
 ---
 
-## 🧰 Hardware & Profit Estimates (CAD)
+## 🎯 Original Objectives
+
+- Run a single GPU workstation with effectively **free electricity** in a rental.
+- Rent the GPU out on compute-sharing platforms (e.g. Vast.ai).
+- Track power usage and profitability.
+- Use profits to buy more used GPUs and scale.
+
+---
+
+## 🧰 Hardware & Profit Sketch (CAD, historic estimate)
 
 | GPU               | Price   | Power Draw | Monthly kWh | Earnings | Profit | Break Even |
-|-------------------|---------|------------|-------------|----------|--------|------------|
-| GTX 1080 *(owned)*| $0      | 180W       | 129.6       | $40      | $40    | Immediate  |
-| RTX 3060 *(used)* | $310    | 200W       | 144.0       | $125     | $125   | 2.48 mo    |
-| RTX 3090 *(new)*  | $1,700  | 350W       | 252.0       | $315     | $315   | 5.4 mo     |
+|-------------------|---------|-----------:|------------:|---------:|-------:|-----------:|
+| GTX 1080 *(owned)*| $0      | 180 W      | 129.6       | $40      | $40    | Immediate  |
+| RTX 3060 *(used)* | $310    | 200 W      | 144.0       | $125     | $125   | 2.5 mo     |
+| RTX 3090 *(new)*  | $1,700  | 350 W      | 252.0       | $315     | $315   | 5.4 mo     |
 
-> ⚠️ Based on 24/7 uptime, **free electricity**, and average Vast.ai market rates.
-
----
-
-## 🛠️ Node Zero – Current Setup
-1. Build initial node with **GTX 1080** for configuration & testing
-2. Install **Ubuntu Server LTS** or **Pop!_OS** (NVIDIA optimized)
-3. Configure **Docker + NVIDIA Container Toolkit**
-4. Verify GPU availability with `nvidia-smi`
+> ⚠️ Back-of-envelope numbers assuming **24/7 uptime**, free power, and average historic Vast.ai rates.  
+> Not financial advice and no longer maintained.
 
 ---
 
-## 🌐 Vast.ai Provider Setup
-- Price slightly below market to ensure consistent rentals
-- Enable **Spot Buyer Access** for long-term clients
-- Use `nvidia-smi -pl <watts>` for power capping
+## 🛠️ Node Zero – Lab Setup (Historic)
+
+1. Build initial node with **GTX 1080** for configuration & testing.
+2. Install **Ubuntu Server LTS**.
+3. Configure **Docker + NVIDIA Container Toolkit**.
+4. Verify GPU availability with `nvidia-smi`.
+5. Register node with Vast.ai and tune pricing / power limits.
 
 ---
 
-## ⚡ Power Budget Strategy
-- Reduce household appliance usage to prioritize GPU power
-- Switch to LED lighting
-- Track usage via `nvidia-smi` and plug-in meters
-- Target total **500–600 kWh/month** to stay stable
+## ⚡ Power & Ops Notes
 
----
-
-## 📈 Growth Timeline
-| Month | Milestone |
-|-------|-----------|
-| 1     | Deploy GTX 1080 and optimize |
-| 2     | Acquire used 3060 with rental income |
-| 3–4   | Buy RTX 3090 using savings/profits |
-| 5–6   | Test power draw ceiling |
-| 6–12  | Rotate uptime across multiple GPUs |
-| 12+   | Begin Paraguay relocation planning |
-
----
-
-## 🇵🇾 Paraguay Expansion – LUX Edificio
-- Power cost: **$0.01/kWh** hydroelectric
-- 5-story compute building with passive well water cooling
-- Capacity target: **250+ GPUs in 12–24 months**
-- Lease capacity for AI, rendering, ML workloads
-- No crypto mining — focus on stable, long-term hosting
+- Use `nvidia-smi -pl <watts>` for power capping.
+- Monitor stability, temperature, and uptime.
+- Track income vs. wear-and-tear and risk.
 
 ---
 
 ## 📂 Folder Structure
 
-```
-/docs
-├── scale-plan.md
-├── gpu-tracker.md
-└── income-log.xlsx
+```text
+docs/
+  scale-plan.md
+  gpu-tracker.md
+  income-log.md
 
-/logs
-├── node-zero-setup.md
-└── vast-uptime-log.md
+logs/
+  node-zero-setup.md
+  vast-uptime-log.md
 
-/scripts
-├── **gpu-healthcheck.sh**
-└── **auto-reboot.sh**
-```
-
----
-
-## ✅ Next Steps
-- [x] Test GTX 1080 on Vast.ai
-- [x] Monitor power draw & income
-- [ ] Add 3060 if profitable
-- [ ] Acquire RTX 3090
-- [ ] Confirm income stability
-- [ ] Begin Paraguay site planning
-
----
-
-**Power-included. Zero debt. Self-scaling.**  
+scripts/
+  gpu-healthcheck.sh
+  auto-reboot.sh
