@@ -1,4 +1,4 @@
-# LUX–Edificio–Core 🏢⚙️
+# vast-gpu-rental-node 🏢⚙️
 **Private Node Optimization Project – Infrastructure Build**
 
 This repository documents the **planning and operation** of a private high-performance GPU compute node in a residential rental environment.  
