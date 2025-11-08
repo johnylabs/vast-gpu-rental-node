@@ -1,6 +1,6 @@
-# 🏗️ LUX–Edificio–Core: Scale Plan
+# 🏗️ vast-gpu-rental-node
 
-This document outlines the step-by-step growth plan for expanding the LUX–Edificio–Core GPU node project from a single-node residential deployment into a high-capacity compute facility located in Paraguay.
+This document outlines the step-by-step growth plan for expanding the vast-gpu-rental-node GPU node project from a single-node residential deployment into a high-capacity compute facility located in Paraguay.
 
 ---
 
